@@ -15,6 +15,9 @@ constructor(private _UserService:UserService){
  
 }
  userLogin(){
-this._UserService.LoginUser()
+this._UserService.LoginUser().subscribe((res)=>{
+  console.log(res);
+  
+})
  }
 }
